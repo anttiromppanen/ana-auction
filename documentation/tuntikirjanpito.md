@@ -4,3 +4,4 @@
 | 19.12      | 2           | Figuring out how Battle.net api works
 | 10.2       | 1           | Basic backend project structure, installed packages
 | 10.2       | 2           | Basic api ready, backend linked to db
+| 10.2       | 2           | Frontend: redux, basic database connection
