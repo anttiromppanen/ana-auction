@@ -11,6 +11,7 @@
   "author": "Antti",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.25.0",
     "cors": "^2.8.5",
     "dotenv": "^16.0.0",
     "express": "^4.17.2",
@@ -24,5 +25,8 @@
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "nodemon": "^2.0.15"
+  },
+  "prettier": {
+    "singleQuote": true
   }
 }

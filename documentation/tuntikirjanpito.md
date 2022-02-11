@@ -5,3 +5,4 @@
 | 10.2       | 1           | Basic backend project structure, installed packages
 | 10.2       | 2           | Basic api ready, backend linked to db
 | 10.2       | 2           | Frontend: redux, basic database connection
+| 11.2       | 2           | Planning frontend structure, auction data controller added to backend
