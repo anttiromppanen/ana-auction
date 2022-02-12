@@ -7,3 +7,4 @@
 | 10.2       | 2           | Frontend: redux, basic database connection
 | 11.2       | 2           | Planning frontend structure, auction data controller added to backend
 | 11.2       | 3           | Frontend: redux setup, added battlenet api access
+| 12.2       | 5           | Frontend: frontend logic, state logic
