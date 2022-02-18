@@ -9,3 +9,4 @@
 | 11.2       | 3           | Frontend: redux setup, added battlenet api access
 | 12.2       | 5           | Frontend: frontend logic, state logic
 | 18.2       | 4           | Frontend: Basic filtering by alchemy working
+| 18.2       | 4           | First ui version with material ui
