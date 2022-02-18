@@ -10,3 +10,4 @@
 | 12.2       | 5           | Frontend: frontend logic, state logic
 | 18.2       | 4           | Frontend: Basic filtering by alchemy working
 | 18.2       | 4           | First ui version with material ui
+| 18.2       | 2           | Auction data logic change
