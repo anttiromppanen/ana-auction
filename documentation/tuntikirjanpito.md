@@ -12,3 +12,4 @@
 | 18.2       | 4           | First ui version with material ui
 | 18.2       | 2           | Auction data logic change
 | 19.2       | 5           | Dropdown tables work with static data
+| 19.2       | 2           | Dropdown tables work with API data & added loader
