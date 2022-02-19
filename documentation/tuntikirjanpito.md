@@ -11,3 +11,4 @@
 | 18.2       | 4           | Frontend: Basic filtering by alchemy working
 | 18.2       | 4           | First ui version with material ui
 | 18.2       | 2           | Auction data logic change
+| 19.2       | 5           | Dropdown tables work with static data
