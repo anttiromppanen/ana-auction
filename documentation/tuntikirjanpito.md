@@ -13,3 +13,4 @@
 | 18.2       | 2           | Auction data logic change
 | 19.2       | 5           | Dropdown tables work with static data
 | 19.2       | 2           | Dropdown tables work with API data & added loader
+| 21.2       | 3           | Filtering by profession working

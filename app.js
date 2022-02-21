@@ -6,6 +6,7 @@ const logger = require('./utils/logger');
 const middleware = require('./utils/middleware');
 const craftablesRouter = require('./controllers/craftables');
 const craftablesAlchemyRouter = require('./controllers/craftables_alchemy');
+const craftablesTailoringRouter = require('./controllers/craftables_tailoring');
 const auctionDataRouter = require('./controllers/auctionData');
 require('express-async-errors');
 
@@ -28,6 +29,7 @@ app.use(middleware.requestLogger);
 
 app.use('/api/craftables', craftablesRouter);
 app.use('/api/craftables/alchemy', craftablesAlchemyRouter);
+app.use('/api/craftables/tailoring', craftablesTailoringRouter);
 app.use('/api/auctiondata', auctionDataRouter);
 
 app.use(middleware.unknownEndpoint);

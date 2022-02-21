@@ -6,4 +6,9 @@ craftablesRouter.get('/', async (req, res) => {
   res.json(craftables.map((craftable) => craftable.toJSON()));
 });
 
+craftablesRouter.get('/professions', async (req, res) => {
+  const professions = await Craftable.find({}).distinct('profession');
+  res.json(professions);
+});
+
 module.exports = craftablesRouter;
