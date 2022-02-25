@@ -14,3 +14,4 @@
 | 19.2       | 5           | Dropdown tables work with static data
 | 19.2       | 2           | Dropdown tables work with API data & added loader
 | 21.2       | 3           | Filtering by profession working
+| 25.2       | 5           | Side menu changed to mini variant
