@@ -15,3 +15,4 @@
 | 19.2       | 2           | Dropdown tables work with API data & added loader
 | 21.2       | 3           | Filtering by profession working
 | 25.2       | 5           | Side menu changed to mini variant
+| 9.3        | 4           | Minor tweaks & ui dark theme
