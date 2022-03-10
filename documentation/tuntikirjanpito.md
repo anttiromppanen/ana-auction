@@ -18,3 +18,4 @@
 | 9.3        | 4           | Minor tweaks & ui dark theme
 | 10.3       | 5           | New frontend design & first implementation
 | 10.3       | 6           | Frontend design further
+| 10.3       | 1           | Heroku config
