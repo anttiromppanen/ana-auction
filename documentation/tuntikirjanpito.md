@@ -17,3 +17,4 @@
 | 25.2       | 5           | Side menu changed to mini variant
 | 9.3        | 4           | Minor tweaks & ui dark theme
 | 10.3       | 5           | New frontend design & first implementation
+| 10.3       | 6           | Frontend design further
