@@ -11,6 +11,9 @@ const craftableSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  icon: {
+    type: String,
+  },
   profession: {
     type: String,
     required: true,
