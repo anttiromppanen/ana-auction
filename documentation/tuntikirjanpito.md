@@ -20,3 +20,4 @@
 | 10.3       | 6           | Frontend design further
 | 10.3       | 1           | Heroku config
 | 26.3       | 1           | API key is now retrieved automatically
+| 26.3       | 5           | UI update
