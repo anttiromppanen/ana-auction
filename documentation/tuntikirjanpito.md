@@ -22,3 +22,4 @@
 | 26.3       | 1           | API key is now retrieved automatically
 | 26.3       | 5           | UI update
 | 30.3       | 2           | Refactor & UI update
+| 1.4        | 5           | React Router, refactor & planning
