@@ -23,3 +23,4 @@
 | 26.3       | 5           | UI update
 | 30.3       | 2           | Refactor & UI update
 | 1.4        | 5           | React Router, refactor & planning
+| 14.4       | 2           | Register- & Login-forms skeleton
