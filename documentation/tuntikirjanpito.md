@@ -26,3 +26,4 @@
 | 14.4       | 2           | Register- & Login-forms skeleton
 | 14.4       | 5           | Added sessionStorage to reduce api calls
 | 14.4       | 6           | Login page reworked
+| 16.4       | 2           | Login page update
