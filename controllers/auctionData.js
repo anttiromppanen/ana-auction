@@ -12,7 +12,8 @@ auctionDataRouter.get('/', async (req, res) => {
       Authorization: `Bearer ${key.access_token}`,
     },
   });
-
+  // auctionData.headers.connection
+  console.log(auctionData.headers);
   res.json(auctionData.data.auctions);
 });
 

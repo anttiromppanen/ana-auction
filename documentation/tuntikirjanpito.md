@@ -27,3 +27,4 @@
 | 14.4       | 5           | Added sessionStorage to reduce api calls
 | 14.4       | 6           | Login page reworked
 | 16.4       | 2           | Login page update
+| 17.4       | 1           | Login page update
