@@ -12,9 +12,9 @@ auctionDataRouter.get('/', async (req, res) => {
       Authorization: `Bearer ${key.access_token}`,
     },
   });
-  // auctionData.headers.connection
-  console.log(auctionData.headers);
-  res.json(auctionData.data.auctions);
+  last_modified = JSON.stringify(auctionData.headers['last-modified']);
+
+  res.send({ auctions: auctionData.data.auctions, last_modified });
 });
 
 module.exports = auctionDataRouter;
