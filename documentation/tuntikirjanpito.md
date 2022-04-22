@@ -32,3 +32,4 @@
 | 18.4       | 4           | Added register page & navbar tweaks
 | 18.4       | 4           | Basic login form logic
 | 22.4       | 5           | Backend & frontend user logic & basic login form validation
+| 22.4       | 5           | Login & register form validation

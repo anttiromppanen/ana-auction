@@ -7,6 +7,12 @@ const User = require('../models/user');
 loginRouter.post('/', async (req, res) => {
   const body = req.body;
 
+  if (!body.username || !body.password) {
+    return res.status(404).json({
+      error: 'No empty fields allowed',
+    });
+  }
+
   const user = await User.findOne({ username: body.username });
   const passwordCorrect =
     user === null
@@ -15,7 +21,7 @@ loginRouter.post('/', async (req, res) => {
 
   if (!(user && passwordCorrect)) {
     return res.status(401).json({
-      error: 'invalid username or password',
+      error: 'Invalid username or password',
     });
   }
 
