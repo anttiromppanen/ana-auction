@@ -19,6 +19,12 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  favoriteCraftables: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'Craftable',
+    },
+  ],
 });
 
 userSchema.set('toJSON', {
