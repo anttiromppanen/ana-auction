@@ -29,7 +29,10 @@ usersRouter.post('/', async (req, res) => {
     });
   }
 
-  const existingUser = await User.findOne({ username });
+  const existingUser = await User.findOne({ username }).populate(
+    'favoriteCraftables'
+  );
+
   if (existingUser) {
     return res.status(400).json({ error: 'Username already taken' });
   }
@@ -51,7 +54,7 @@ usersRouter.post('/', async (req, res) => {
 
 usersRouter.post('/add-favorite', async (req, res) => {
   const { username, itemID } = req.body;
-  const user = await User.findOne({ username });
+  const user = await User.findOne({ username }).populate('favoriteCraftables');
 
   if (!user) {
     return res.status(401).json({ error: 'Invalid user' });
@@ -69,7 +72,7 @@ usersRouter.post('/add-favorite', async (req, res) => {
 usersRouter.post('/remove-favorite', async (req, res) => {
   const { username, itemID } = req.body;
 
-  const user = await User.findOne({ username });
+  const user = await User.findOne({ username }).populate('favoriteCraftables');
 
   if (!user) {
     return res.status(401).json({ error: 'Invalid user' });
@@ -80,7 +83,7 @@ usersRouter.post('/remove-favorite', async (req, res) => {
   }
 
   user.favoriteCraftables = user.favoriteCraftables.filter(
-    (craftable) => craftable !== itemID
+    (craftable) => craftable._id.toString() !== itemID.toString()
   );
 
   const savedUser = await user.save();

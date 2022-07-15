@@ -13,7 +13,10 @@ loginRouter.post('/', async (req, res) => {
     });
   }
 
-  const user = await User.findOne({ username: body.username });
+  const user = await User.findOne({ username: body.username }).populate(
+    'favoriteCraftables'
+  );
+
   const passwordCorrect =
     user === null
       ? false
@@ -32,15 +35,13 @@ loginRouter.post('/', async (req, res) => {
 
   const token = jwt.sign(userForToken, config.SECRET, { expiresIn: '12h' });
 
-  res
-    .status(200)
-    .send({
-      token,
-      username: user.username,
-      name: user.name,
-      role: user.role,
-      favorites: user.favoriteCraftables,
-    });
+  res.status(200).send({
+    token,
+    username: user.username,
+    name: user.name,
+    role: user.role,
+    favorites: user.favoriteCraftables,
+  });
 });
 
 module.exports = loginRouter;
