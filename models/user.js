@@ -21,7 +21,7 @@ const userSchema = new mongoose.Schema({
   },
   favoriteCraftables: [
     {
-      type: mongoose.Schema.Types.ObjectId,
+      type: Number,
       ref: 'Craftable',
     },
   ],

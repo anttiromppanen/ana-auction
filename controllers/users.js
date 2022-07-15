@@ -49,4 +49,42 @@ usersRouter.post('/', async (req, res) => {
   res.status(201).json(savedUser);
 });
 
+usersRouter.post('/add-favorite', async (req, res) => {
+  const { username, itemID } = req.body;
+  const user = await User.findOne({ username });
+
+  if (!user) {
+    return res.status(401).json({ error: 'Invalid user' });
+  }
+
+  if (!itemID) {
+    return res.status(400).json({ error: 'Item required' });
+  }
+
+  user.favoriteCraftables.push(itemID);
+  const savedUser = await user.save();
+  res.status(201).json(savedUser);
+});
+
+usersRouter.post('/remove-favorite', async (req, res) => {
+  const { username, itemID } = req.body;
+
+  const user = await User.findOne({ username });
+
+  if (!user) {
+    return res.status(401).json({ error: 'Invalid user' });
+  }
+
+  if (!itemID) {
+    return res.status(400).json({ error: 'Item required' });
+  }
+
+  user.favoriteCraftables = user.favoriteCraftables.filter(
+    (craftable) => craftable !== itemID
+  );
+
+  const savedUser = await user.save();
+  res.status(201).json(savedUser);
+});
+
 module.exports = usersRouter;

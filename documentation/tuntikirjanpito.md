@@ -34,3 +34,4 @@
 | 22.4       | 5           | Backend & frontend user logic & basic login form validation
 | 22.4       | 5           | Login & register form validation
 | 15.7       | 4           | Added favorites for users in database & star icon to frontend
+| 15.7       | 4           | Logic works for adding favorites to a user

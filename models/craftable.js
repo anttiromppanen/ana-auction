@@ -3,10 +3,7 @@
 const mongoose = require('mongoose');
 
 const craftableSchema = new mongoose.Schema({
-  item_id: {
-    type: Number,
-    required: true,
-  },
+  _id: Number,
   name: {
     type: String,
     required: true,
@@ -31,7 +28,6 @@ const craftableSchema = new mongoose.Schema({
 craftableSchema.set('toJSON', {
   transform: (document, returnedObject) => {
     returnedObject.id = returnedObject._id.toString();
-    delete returnedObject._id;
     delete returnedObject.__v;
   },
 });
