@@ -36,3 +36,4 @@
 | 15.7       | 4           | Added favorites for users in database & star icon to frontend
 | 15.7       | 4           | Logic works for adding favorites to a user
 | 15.7       | 3           | Added new url endpoints & favorites fully working
+| 17.7       | 2           | Nav bug fixes
