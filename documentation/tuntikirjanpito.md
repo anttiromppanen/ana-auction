@@ -37,3 +37,4 @@
 | 15.7       | 4           | Logic works for adding favorites to a user
 | 15.7       | 3           | Added new url endpoints & favorites fully working
 | 17.7       | 2           | Nav bug fixes
+| 19.7       | 5           | Heroku debug (region change from us to eu fixed the issue)
