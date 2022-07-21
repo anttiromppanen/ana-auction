@@ -1,6 +1,7 @@
 const bcrypt = require('bcrypt');
 const usersRouter = require('express').Router();
 const User = require('../models/user');
+const Craftable = require('../models/craftable');
 
 usersRouter.post('/', async (req, res) => {
   const { name, username, password, passwordAgain } = req.body;
@@ -54,7 +55,7 @@ usersRouter.post('/', async (req, res) => {
 
 usersRouter.post('/add-favorite', async (req, res) => {
   const { username, itemID } = req.body;
-  const user = await User.findOne({ username }).populate('favoriteCraftables');
+  const user = await User.findOne({ username });
 
   if (!user) {
     return res.status(401).json({ error: 'Invalid user' });
@@ -64,9 +65,16 @@ usersRouter.post('/add-favorite', async (req, res) => {
     return res.status(400).json({ error: 'Item required' });
   }
 
+  if (user.favoriteCraftables.includes(itemID))
+    return res.status(201).json(savedUser);
+
   user.favoriteCraftables.push(itemID);
   const savedUser = await user.save();
-  res.status(201).json(savedUser);
+
+  const returnUser = await User.findOne({ username }).populate(
+    'favoriteCraftables'
+  );
+  res.status(201).json(returnUser);
 });
 
 usersRouter.post('/remove-favorite', async (req, res) => {
