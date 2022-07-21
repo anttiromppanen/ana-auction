@@ -39,3 +39,4 @@
 | 17.7       | 2           | Nav bug fixes
 | 19.7       | 5           | Heroku debug (region change from us to eu fixed the issue)
 | 19.7       | 7           | Planning & data structures for profitability calculation
+| 21.7       | 8           | Profitability calculation working, encountered bug with favorites
