@@ -41,3 +41,4 @@
 | 19.7       | 7           | Planning & data structures for profitability calculation
 | 21.7       | 8           | Profitability calculation working, encountered bug with favorites
 | 21.7       | 5           | Profitability frontend fully done & fixed bugs with user frontend and favorites
+| 22.7       | 3           | Minor frontend tweaks & fixed bug with ahData item filtering
